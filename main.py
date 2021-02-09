@@ -13,16 +13,12 @@ print('\n', slashes)
 
 meet_id = input('Enter Meeting ID: ')
 password = input('Enter Meeting password: ')
-meet_time = input(
-    ('Enter everyday meeting time in 24hour format ("16:30" for 4:30pm): '))
-total_meet = input(
-    'How long will the meeting last for ?(180 for 3 hours): ')
+meet_time = input(('Enter everyday meeting time in 24hour format ("16:30" for 4:30pm): '))
+total_meet = input('How long will the meeting last for ?(180 for 3 hours): ')
 print(slashes)
 
 total_meet = int(total_meet)
 meet_time = str(meet_time)
-
-
 
 def zoomClass():
     time.sleep(0.2)
