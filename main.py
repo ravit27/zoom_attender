@@ -7,13 +7,13 @@ slashes = "/" * 50
 
 print('\n\n', slashes)
 
-print('Welcome to Zoom Schedulers, lazy people!! ^_^')
+print('ZOOM ATTENDER')
 print('\n>>Enter the following details regarding the meeting to set it up...')
 print(">>If you've reached here I'm assuming you've read the README.md and have the settings configured")
 print(">>Please check all the configurations before proceeding as it may cause this program to crash otherwise")
 print(">>Please keep this program running in the background at all times (if you want to run it everyday)")
 print("Requirements : ( python version > 3.0 ) and ( 'schedule','pyautogui' packages installed )")
-print('You can exit this program using ( Ctrl+c ) at any time')
+print('Use ( Ctrl+c ) to exit at any time')
 
 print('\n', slashes)
 
