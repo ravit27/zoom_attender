@@ -1,11 +1,11 @@
 import pyautogui
 import schedule
 import time
-hashes = "/" * 50
+slashes = "/" * 50
 
-# User Inputs
 
-print('\n\n', hashes)
+
+print('\n\n', slashes)
 
 print('Welcome to Zoom Schedulers, lazy people!! ^_^')
 print('\n>>Enter the following details regarding the meeting to set it up...')
@@ -15,7 +15,7 @@ print(">>Please keep this program running in the background at all times (if you
 print("Requirements : ( python version > 3.0 ) and ( 'schedule','pyautogui' packages installed )")
 print('You can exit this program using ( Ctrl+c ) at any time')
 
-print('\n', hashes)
+print('\n', slashes)
 
 meet_id = input('Enter Meeting ID: ')
 password = input('Enter Meeting password: ')
@@ -23,7 +23,7 @@ meet_time = input(
     ('Enter everyday meeting time in 24hour format (eg: "15:30" for 3:30pm): '))
 total_meet = input(
     'How long will the meeting last for ?(Answer in minutes eg:120 for 2 hours): ')
-print(hashes)
+print(slashes)
 
 # just for confirmation
 total_meet = int(total_meet)
