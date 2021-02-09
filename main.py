@@ -3,12 +3,10 @@ import schedule
 import time
 slashes = "/" * 50
 
-
-
 print('\n\n', slashes)
 
 print('ZOOM ATTENDER')
-print('\n>>Enter the following details regarding the meeting to set it up...')
+print('\n>>Enter the following details')
 print('Use ( Ctrl+c ) to exit at any time')
 
 print('\n', slashes)
@@ -16,12 +14,11 @@ print('\n', slashes)
 meet_id = input('Enter Meeting ID: ')
 password = input('Enter Meeting password: ')
 meet_time = input(
-    ('Enter everyday meeting time in 24hour format (eg: "15:30" for 3:30pm): '))
+    ('Enter everyday meeting time in 24hour format ("16:30" for 4:30pm): '))
 total_meet = input(
-    'How long will the meeting last for ?(Answer in minutes eg:120 for 2 hours): ')
+    'How long will the meeting last for ?(180 for 3 hours): ')
 print(slashes)
 
-# just for confirmation
 total_meet = int(total_meet)
 meet_time = str(meet_time)
 
@@ -52,14 +49,12 @@ def zoomClass():
     pyautogui.write(password)
     pyautogui.press('enter', interval=10)
 
-    print("Session has started and will continue for %s minutes" % total_meet)
+    print("Session has started for %s minutes" % total_meet)
 
-    print('Hold (Ctrl+c) to exit the program ')
+    print('Use (Ctrl+c) to exit the program ')
 
-    # Total time of zoom session
     time.sleep(total_meet * 60)
 
-    # closing Zoom
     os.system("TASKKILL /F /IM Zoom.exe")
     time.sleep(0.5)
 
