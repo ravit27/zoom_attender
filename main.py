@@ -25,7 +25,6 @@ print(slashes)
 total_meet = int(total_meet)
 meet_time = str(meet_time)
 
-# Where the Magic happens function
 
 
 def zoomClass():
@@ -43,11 +42,7 @@ def zoomClass():
     time.sleep(10)
 
     x, y = pyautogui.locateCenterOnScreen('F:/Zoom-Automation/joinIMG.png')
-    """
-    # x,y = pyautogui.locateCenterOnScreen('joinIMG.png', confidence = 0.9)
-    # Uncomment ln 49 and comment ln 47
-    # if you get an 'TypeError: cannot unpack non-iterable NoneType object' error
-    """
+   
     pyautogui.click(x, y)
 
     pyautogui.press('enter', interval=5)
@@ -69,17 +64,9 @@ def zoomClass():
     time.sleep(0.5)
 
 
-# Every day at whatever time the user has entered.
 schedule.every().day.at("%s" % meet_time).do(zoomClass)
 print("Scheduling meeting at ", meet_time)
 
-# Infinite Loop so that the scheduled task keeps running
 while True:
-
-    # Check whether a scheduled task is pending to run or not
     schedule.run_pending()
     time.sleep(1)
-
-# Main Func
-# if __name__ == "__main__":
-    # zoomClass()
