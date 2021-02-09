@@ -1,7 +1,3 @@
-# Made By Prashanth Umapathy
-# Specialises is Laziness
-
-# Libraries imported
 import pyautogui
 import schedule
 import time
