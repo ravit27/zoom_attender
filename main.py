@@ -1,9 +1,7 @@
 import pyautogui
 import schedule
 import time
-
-# To be printed hashes
-hashes = "#" * 95
+hashes = "/" * 50
 
 # User Inputs
 
